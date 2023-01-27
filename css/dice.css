@@ -1,0 +1,86 @@
+:root {
+    --accent: #F5D2C9;
+    --cellStroke: #A89E82;
+    --cellColor: #d6edf5;
+    --bg: #F5E9C9;
+    --text: #A88A82;
+}
+* {
+    margin: 0;
+}
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1  {
+    font-size: 2em;
+    display: flex;
+}
+h3 {
+    position: absolute;
+    right: 50%;
+}
+.rollContainer {
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+}
+#rollOutput {
+    position: absolute;
+    left: 50%;
+    padding-left: .5em;
+    font-size: 1.5em;
+    /*margin: .5em;*/
+    /*width: 70px;*/
+    font-weight: bolder;
+    /*border: .25em var(--text) solid;*/
+    /*border-radius: .25em;*/
+    /*background-color: var(--bg);*/
+    box-sizing: border-box;
+    /*aspect-ratio: 1/1;*/
+    /*width: 100%;*/
+}
+.optionContainer {
+    /*padding: 1em;*/
+    /*padding: 1em;*/
+    /*width: 100vw;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+button {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 1em;
+    /*padding: 1em;*/
+    margin: .25em;
+    /*width: 100vw;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    border: .25em var(--text) solid;
+    border-radius: .25em;
+}
+button:hover {
+    background-color: var(--cellColor);
+    border: .25em var(--cellColor) solid;
+    font-weight: bolder;
+    box-shadow: 2px 2px 5px var(--cellStroke);
+}
+button:active {
+    background-color: var(--accent);
+    border: .25em var(--accent) solid;
+    font-weight: bolder;
+    scale: 1.1;
+    box-shadow: 2px 2px 5px var(--cellStroke);
+}
+/*@media only screen and (max-width: 600px) {*/
+/*    h1  {*/
+/*        font-size: 4em;*/
+/*        display: flex;*/
+/*    }*/
+/*}*/
